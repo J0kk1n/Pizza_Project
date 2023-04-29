@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Indie+Flower&family=Roboto+Mono:wght@600&family=Secular+One&family=Sigmar&family=Titan+One&display=swap');
+
+body {
+    font-family: 'Secular One', sans-serif;
+    color: rgb(255, 255, 255);
+    margin: 0 auto;
+    max-width: 1440px;
+    min-width: 680px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+ul {
+    padding: 0;
+}
+
+.main-container {
+    background: rgb(255, 255, 255);
+    height: 100%;
+}
+
+.head-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.head,
+.footer-container {
+    display: flex;
+    height: 100px;
+    margin: 0 auto -20px auto;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-bar,
+.social {
+    font-size: 1.1em;
+    color: #252b42;
+    display: flex;
+    flex: 2;
+    list-style-type: none;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-bar > li > a {
+    margin: 0 50px;
+    cursor: pointer;
+    color: inherit;
+}
+
+.nav-bar > li:nth-child(1) {
+    color: #fa4a0c;
+}
+
+.app,
+.download {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto 0 auto;
+    height: 600;
+}
+
+.background-img,
+.background-img-2 {
+    position: relative;
+    background: url(../image/Background.png) no-repeat;
+    background-size: cover;
+    width: 1440px;
+    height: 570px;
+}
+
+.background-img-2 {
+    background: url(../image/Background_2.png) no-repeat;
+}
+
+.app-info-wrapper,
+.download-info-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.4em;
+}
+
+.app-info-wrapper,
+.download-info-wrapper {
+    padding: 40px 0 0 0;
+}
+
+.app-info-wrapper > div > p,
+.app-info-wrapper > p,
+.download-info-wrapper > div > p,
+.download-info-wrapper > p {
+    font-family: 'Indie Flower', cursive;
+    font-weight: 900;
+}
+
+.app-body-text,
+.download-text {
+    margin: -40px 0;
+    display: flex;
+    justify-content: center;
+    word-spacing: 5px;
+    font-size: 2.4em;
+    text-align: center;
+    width: 80%;
+}
+
+.buttons-app {
+    margin: 30px 0;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+.playstore,
+.app-store {
+    margin: 0 20px;
+    width: 200px;
+    text-align: center;
+    display: inline-block;
+    padding: 0.8em 1.5em;
+    border-radius: 30px;
+    border: 2px solid white;
+    transition: all 0.1s ease-in 0s;
+}
+
+.btn-orange {
+    background: #fa4a0c;
+    border: 2px solid #990808;
+}
+
+.btn-active:hover {
+    transform: translateY(-1px);
+    cursor: pointer;
+    background: #990808;
+    border: 2px solid #990808;
+    transition: all 0.1s ease-in 0s;
+}
+
+.phone {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.bottom-line::after {
+    content: '';
+    background-color: #e4e4e4;
+    height: 3px;
+    width: 900px;
+    display: block;
+}
+
+.account,
+.varieties,
+.checkout {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #252b42;
+}
+
+.account-wrapper,
+.varieties-wrapper,
+.checkout-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.account-wrapper-image > img,
+.varieties-wrapper-image > img,
+.checkout-wrapper-image > img {
+    filter: drop-shadow(0px 0 30px #979797);
+}
+
+.account-wrapper-text,
+.varieties-wrapper-text,
+.checkout-wrapper-text {
+    flex: 0.9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.account-wrapper-text > p,
+.varieties-wrapper-text > p,
+.checkout-wrapper-text > p {
+    display: inline-block;
+    margin: 18px 0;
+}
+
+.account-wrapper-text > p:nth-child(odd),
+.varieties-wrapper-text > p:nth-child(odd),
+.checkout-wrapper-text > p:nth-child(odd) {
+    font-size: 0.9em;
+    font-weight: 100;
+    color: #737373;
+}
+
+.account-wrapper-text > p:nth-child(-n+2),
+.varieties-wrapper-text > p:nth-child(-n+2),
+.checkout-wrapper-text > p:nth-child(-n+2){
+    font-size: 1.4em;
+    font-weight: 700;
+}
+
+.account-wrapper-text > p:nth-child(1),
+.varieties-wrapper-text > p:nth-child(1),
+.checkout-wrapper-text > p:nth-child(1){
+    color: #fa4a0c;
+    font-size: 0.9em;
+}
+
+.download {
+    margin-top: 100px;
+}
+
+.container {
+    margin: -30px 0 0 0;
+    display: flex;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.social > li > a {
+    margin: 0 15px 0 15px;
+    cursor: pointer;
+    color: #fa4a0c;
+}
+
+.foot-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #252b42;
+    font-size: 0.9em;
+}
+
+.text-top {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width: 1200px) {
+    .adaptive {
+        margin: 30px auto;
+        display: block;
+        text-align: center;
+        font-size: 17px;
+        padding: 30px;
+    }
+
+    .background-img {
+        padding-bottom: 40px;
+    }
+
+    .head {
+        padding-top: 0;
+    }
+
+    .phone-image > img {
+        width: 460px;
+        height: 582px;
+        margin: -70px 0 0 0;
+    }
+
+    .bottom-line {
+        display: none;
+    }
+
+    .checkout-wrapper {
+        flex-direction: row;
+    }
+
+    .text-top {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .account-wrapper-text,
+    .varieties-wrapper-text,
+    .checkout-wrapper-text {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 650px) {
+    .footer-logo {
+        display: none;
+    }
+
+    .download-info-wrapper > p {
+        display: block;
+        width: 90vw;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .social {
+        flex: 0.7;
+    }
+}
